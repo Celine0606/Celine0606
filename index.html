@@ -1,59 +1,1300 @@
 <!DOCTYPE html>
-<!-- saved from url=(0149)file:///D:/2022%E6%98%A5/%E5%88%9B%E6%84%8F%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E4%B8%8E%E6%8A%80%E6%9C%AF/Creative-Interaction-Design/exercise6.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>iPuzzle</title>
-     <script>
-     var response = prompt("What's your name?");
-     alert("Hello "+ response +", welcome to this puzzle game!");
+<html class="no-js" lang="en">
 
-     function inputAnswer(){
-        var answer = prompt("Enter your answer here: ");
-        if(answer==="4"){
-        alert("Well done, your answer is correct!");
-       }
-      else{
-         alert("Sorry, "+ answer +" is not the answer, let's try again!");
-      }
-      }
-
-    function getAnswer(){
-      alert("The answer is 4.")
-    }
-
-    function inputFeedback(){
-      var feedback = prompt("We're glad to receive your suggestions:");
-      alert("Thanks for trying! ");
-    }
-     </script>
-
- <style>
- button {
-  background-color: #20B2AA; /* Green */
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-</style>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Creative Agency Responsive HTML5 Template. Built with Bootstrap, HTML5, CSS3 and jQuery.">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, jQuery, Animation, Bootstrap, Font Awesome, Revolution Slider, Agengy, Portfolio">
+    <meta name="author" content="Orientate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbito - Creative Agency Responsive HTML5 Template</title><!-- BEGIN:CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/orbito-icons.css">
+    <link rel="stylesheet" href="assets/css/orientate-font.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/lightslider.css">
+    <link rel="stylesheet" href="assets/css/lightcase.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
+    <link rel="stylesheet" href="assets/css/ignore_for_wp.css">
+    <link rel="stylesheet" href="assets/css/preset.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/responsive.css"><!-- END:CSS -->
+    <!-- BEGIN:Favicon Icon -->
+    <!-- END:Favicon Icon -->
 </head>
-<body style="background-color:PowderBlue;">
-    <div align="center">
-        <h1 style="background-color:Turquoise; hright:40px;width: 700px; border-radius: 10px;">Relax your brain and play a puzzle game.</h1>
-        <h3>Please find the law and get the value of the question mark.</h3>
-        <img src="pai.gif" style="width:100px;height:100px">
-        <img src="puzzle.jpg" style="width:300px;height:300px">
-        <img src="hai.gif" style="width:100px;height:100px">
-    </div>
-    <div align="center">
-  <h3><button onclick="inputAnswer()"><strong>Click to try your answer</strong></button>
-  <button onclick="getAnswer()"><strong>Get the answer</strong></button>
-  <button onclick="inputFeedback()"><strong>Click to give us feedback</strong></button></h3>
-  <h4><a href="http://www.iqsuperman.net/" target="_blank"> Click to try more games.</a></h4>
-  </div>
 
+<body>
+    <!-- BEGIN:Preloader -->
+    <div id="preloader">
+        <div class="la-ball-scale-multiple la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div><!-- END:Preloader -->
+    <!-- BEGIN:Header -->
+    <header class="header01 isSticky">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="headerInner">
+                        <div class="logo"><a href=""><img src="assets/picture/logo.png" alt="Orbito"></a></div><a
+                            href="javascript:void(0)" class="menu_btn"><i class="twi-bars2"></i><span>Menu</span></a>
+                        <nav class="mainMenu">
+                            <ul>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Home One</a></li>
+                                        <li><a href="index2.html">Home Two</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);">Services</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="service.html">Service 01</a></li>
+                                        <li><a href="service2.html">Service 02</a></li>
+                                        <li><a href="service_details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);">Portfolio</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item-has-children"><a href="javascript:void(0);">Portfolio</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="portfolio.html">Grid View 01</a></li>
+                                                <li><a href="portfolio2.html">Grid View 02</a></li>
+                                                <li><a href="portfolio3.html">Masonry View 01</a></li>
+                                                <li><a href="portfolio4.html">Masonry View 02</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="portfolio_details.html">Portfolio Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item-has-children"><a href="javascript:void(0);">Blog
+                                                Standard</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog_standard_lsb.html">Left Sidebar</a></li>
+                                                <li><a href="blog_standard_nsb.html">No Sidebar</a></li>
+                                                <li><a href="blog_standard_rsb.html">Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="javascript:void(0);">Blog Grid</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog_grid_lsb.html">Left Sidebar</a></li>
+                                                <li><a href="blog_grid_nsb.html">No Sidebar</a></li>
+                                                <li><a href="blog_grid_rsb.html">Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog_single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="javascript:void(0);">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="team_members.html">Team</a></li>
+                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                        <li><a href="faq.html">Help & FAQ's</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="accessArea">
+                            <div class="headerIcons">
+                                <a class="searchToggler" href="javascript:void(0);"><i class="fas fa-search"></i></a>
+                                <a class="socialIcons fac" href="javascript:void(0);"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a class="socialIcons twi" href="javascript:void(0);"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a class="socialIcons lin" href="javascript:void(0);"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="socialIcons ins" href="javascript:void(0);"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="headerCall">
+                                <i class="fa-solid fa-phone"></i>
+                                <h4>Get Help</h4>
+                                <h3>+123 456 7890</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header01Search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form method="get" action="#">
+                            <input type="search" name="s" id="s" placeholder="Seach your keyword">
+                            <button type="submit"><i class="orbito-search1"></i></button>
+                            <a href="javascript:void(0);" class="cancleSearch"><i class="orbito-cancel"></i></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END: Header -->
 
-</body></html>
+    <!-- BEGIN: Slider -->
+    <section class="slider01">
+        <div class="rev_slider_wrapper">
+            <div id="rev_slider_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+                <ul>
+                    <li data-index="rs-3046" data-transition="random-premium" data-slotamount="default"
+                        data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeInOut"
+                        data-easeout="Power3.easeInOut" data-masterspeed="1000" data-thumb="" data-rotate="0"
+                        data-saveperformance="off" data-title="" data-param1="01" data-param2="" data-param3=""
+                        data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                        data-param10="" data-description="">
+                        <img src="assets/picture/1.1.jpg" alt="" data-bgposition="left center" data-bgfit="cover"
+                            data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina/=""> <div
+                            class="tp-caption tp-resizeme rs-parallaxlevel-1"
+                            data-frames='[{"delay":1000,"speed":600,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                            data-x="['left','left','left','left']" data-hoffset="['127','0','0','0']"
+                            data-y="['top','top','top','top']" data-voffset="['100','0','0','0']" data-width="auto"
+                            data-height="auto" data-basealign="slide"><img src="assets/picture/131.png"
+                            alt="Slider Shape">
+            </div>
+            <div class="tp-caption tp-resizeme"
+                data-frames='[{"delay":1200,"speed":300,"frame":"0","from":"y:top;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-x="['right','right','right','right']" data-y="['top','top','top','top']"
+                data-hoffset="['0','0','0','0']" data-voffset="['0','0','0','0']" data-width="auto" data-height="auto"
+                data-basealign="slide"><img src="assets/picture/141.png" alt="Slider Shape"></div>
+            <div class="tp-caption tp-resizeme"
+                data-frames='[{"delay":1200,"speed":600,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-x="['right','right','right','center']" data-y="['bottom','bottom','bottom','center']"
+                data-hoffset="['112','0','0','0']" data-voffset="['0','0','0','0']" data-width="auto" data-height="auto"
+                data-basealign="slide"><img src="assets/picture/15.png" alt="Slider Shape"></div>
+            <div class="tp-caption tp-resizeme"
+                data-frames='[{"delay":1100,"speed":900,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-x="['left','left','left','left']" data-y="['center','center','center','center']"
+                data-hoffset="['152','0','0','0']" data-voffset="['11','0','0','0']" data-width="auto"
+                data-height="auto" data-basealign="slide"><img class="roundAnim02" src="assets/picture/17.png"
+                    alt="Slider Shape"></div>
+            <div class="tp-caption tp-resizeme"
+                data-frames='[{"delay":1200,"speed":900,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"power3.inOut"}]'
+                data-x="['left','left','left','center']" data-y="['center','center','center','center']"
+                data-hoffset="['167','0','0','0']" data-voffset="['-9','0','0','0']" data-width="auto"
+                data-height="auto" data-basealign="slide"><img class="roundAnim01" src="assets/picture/16.png"
+                    alt="Slider Shape"></div>
+            <div class="tp-caption jost textLayer" data-x="['left','left','left','center']"
+                data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['-194','-194','-194','-254']" data-fontsize="['18','18','18','18']"
+                data-fontweight="['500','500','500','500']" data-lineheight="['24','24','24','24']"
+                data-width="['570','570','370','100%']" data-height="none" data-whitespace="nowrap"
+                data-color="['#f9758f','#f9758f','#f9758f','#f9758f']" data-type="text" data-responsive_offset="off"
+                data-frames='[{"delay":1300,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-textalign="['left','left','left','center']" data-paddingtop="['0','0','0','0']"
+                data-paddingright="['0','0','0','20']" data-paddingbottom="['0','0','0','0']"
+                data-paddingleft="['0','120','80','20']" data-marginleft="['0','0','0','0']"
+                style="letter-spacing: 7.5px; text-transform: uppercase;">We Are Orbito</div>
+            <div class="tp-caption jost textLayer" data-x="['left','left','left','center']"
+                data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['-87','-87','-87','-170']" data-fontsize="['72','60','45','45']"
+                data-fontweight="['500','500','500','500']" data-lineheight="['84','72','58','55']"
+                data-width="['570','570','570','100%']" data-height="none" data-whitespace="normal"
+                data-color="['#FFFFFF','#FFFFFF','#FFFFFF','#FFFFFF']" data-type="text" data-responsive_offset="off"
+                data-frames='[{"delay":1350,"speed":750,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-textalign="['left','left','left','center']" data-paddingtop="['0','0','0','0']"
+                data-paddingright="['0','0','0','20']" data-paddingbottom="['0','0','0','0']"
+                data-paddingleft="['0','120','80','20']" data-marginleft="['0','0','0','0']"
+                style="letter-spacing: 0px;">World Leading Creative Agency</div>
+            <div class="tp-caption openSans textLayer" data-x="['left','left','left','center']"
+                data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['61','40','40','-50']" data-fontsize="['24','18','18','18']"
+                data-fontweight="['400','400','400','400']" data-lineheight="['36','32','32','32']"
+                data-width="['570','570','570','100%']" data-height="none" data-whitespace="normal"
+                data-color="['#FFFFFF','#FFFFFF','#FFFFFF','#FFFFFF']" data-type="text" data-responsive_offset="off"
+                data-frames='[{"delay":1400,"speed":800,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-textalign="['left','left','left','center']" data-paddingtop="['0','0','0','0']"
+                data-paddingright="['0','0','0','20']" data-paddingbottom="['0','0','0','0']"
+                data-paddingleft="['0','120','80','20']" data-marginleft="['0','0','0','0']"
+                style="letter-spacing: 0px;">Mation ullamco laboris nisi ut aliquip ex ea core dolor in reprehend er
+                fugiat nulla pariatur.</div>
+            <div class="tp-caption ws_nowrap bebas textLayer" data-x="['left', 'left', 'center', 'center']"
+                data-hoffset="['0', '0', '0', '0']" data-y="['middle']" data-voffset="['163','140','140','70']"
+                data-fontsize="['16']" data-fontweight="500" data-lineheight="['52']"
+                data-width="['auto','auto','auto','100%']" data-height="['auto']" data-whitesapce="['normal']"
+                data-color="['#fff']" data-type="text" data-responsive_offset="off"
+                data-frames='[{"delay":1450,"speed":850,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-textalign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,20]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,120,120,20]"><a
+                    class="orbBtn01 hoverBlue" href="about.html">
+                    <span class="bp-shape"></span>
+                    <span class="bp-shape"></span>
+                    <span class="bp-shape"></span>
+                    <span class="bp-shape"></span>
+                    <span class="bp-text">Read More</span>
+                </a>
+            </div>
+            </li>
+            <li data-index="rs-3047" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0"
+                data-hideslideonmobile="off" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut"
+                data-masterspeed="1000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title=""
+                data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                <img src="assets/picture/1.2.jpg" alt="" data-bgposition="left center" data-bgfit="cover"
+                    data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina/=""> <div
+                    class="tp-caption tp-resizeme rs-parallaxlevel-1"
+                    data-frames='[{"delay":1000,"speed":600,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                    data-x="['left','left','left','left']" data-hoffset="['127','0','0','0']"
+                    data-y="['top','top','top','top']" data-voffset="['100','0','0','0']" data-width="auto"
+                    data-height="auto" data-basealign="slide"><img src="assets/picture/131.png" alt="Slider Shape">
+        </div>
+        <div class="tp-caption tp-resizeme"
+            data-frames='[{"delay":1200,"speed":300,"frame":"0","from":"y:top;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+            data-x="['right','right','right','right']" data-y="['top','top','top','top']"
+            data-hoffset="['0','0','0','0']" data-voffset="['0','0','0','0']" data-width="auto" data-height="auto"
+            data-basealign="slide"><img src="assets/picture/141.png" alt="Slider Shape"></div>
+        <div class="tp-caption tp-resizeme"
+            data-frames='[{"delay":1200,"speed":600,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+            data-x="['right','right','right','center']" data-y="['bottom','bottom','bottom','center']"
+            data-hoffset="['112','0','0','0']" data-voffset="['0','0','0','0']" data-width="auto" data-height="auto"
+            data-basealign="slide"><img src="assets/picture/15.png" alt="Slider Shape"></div>
+        <div class="tp-caption tp-resizeme"
+            data-frames='[{"delay":1100,"speed":900,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+            data-x="['left','left','left','left']" data-y="['center','center','center','center']"
+            data-hoffset="['152','0','0','0']" data-voffset="['11','0','0','0']" data-width="auto" data-height="auto"
+            data-basealign="slide"><img class="roundAnim02" src="assets/picture/17.png" alt="Slider Shape"></div>
+        <div class="tp-caption tp-resizeme"
+            data-frames='[{"delay":1200,"speed":900,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"power3.inOut"}]'
+            data-x="['left','left','left','center']" data-y="['center','center','center','center']"
+            data-hoffset="['167','0','0','0']" data-voffset="['-9','0','0','0']" data-width="auto" data-height="auto"
+            data-basealign="slide"><img class="roundAnim01" src="assets/picture/16.png" alt="Slider Shape"></div>
+        <div class="tp-caption jost textLayer" data-x="['left','left','left','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['-194','-194','-194','-254']"
+            data-fontsize="['18','18','18','18']" data-fontweight="['500','500','500','500']"
+            data-lineheight="['24','24','24','24']" data-width="['570','570','370','100%']" data-height="none"
+            data-whitespace="nowrap" data-color="['#f9758f','#f9758f','#f9758f','#f9758f']" data-type="text"
+            data-responsive_offset="off"
+            data-frames='[{"delay":1300,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+            data-textalign="['left','left','left','center']" data-paddingtop="['0','0','0','0']"
+            data-paddingright="['0','0','0','20']" data-paddingbottom="['0','0','0','0']"
+            data-paddingleft="['0','120','80','20']" data-marginleft="['0','0','0','0']"
+            style="letter-spacing: 7.5px; text-transform: uppercase;">We Are Orbito</div>
+        <div class="tp-caption jost textLayer" data-x="['left','left','left','center']" data-hoffset="['0','0','0','0']"
+            data-y="['middle','middle','middle','middle']" data-voffset="['-87','-87','-87','-170']"
+            data-fontsize="['72','60','45','45']" data-fontweight="['500','500','500','500']"
+            data-lineheight="['84','72','58','55']" data-width="['570','570','570','100%']" data-height="none"
+            data-whitespace="normal" data-color="['#FFFFFF','#FFFFFF','#FFFFFF','#FFFFFF']" data-type="text"
+            data-responsive_offset="off"
+            data-frames='[{"delay":1350,"speed":750,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+            data-textalign="['left','left','left','center']" data-paddingtop="['0','0','0','0']"
+            data-paddingright="['0','0','0','20']" data-paddingbottom="['0','0','0','0']"
+            data-paddingleft="['0','120','80','20']" data-marginleft="['0','0','0','0']" style="letter-spacing: 0px;">
+            World Leading Creative Agency</div>
+        <div class="tp-caption openSans textLayer" data-x="['left','left','left','center']"
+            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+            data-voffset="['61','40','40','-50']" data-fontsize="['24','18','18','18']"
+            data-fontweight="['400','400','400','400']" data-lineheight="['36','32','32','32']"
+            data-width="['570','570','570','100%']" data-height="none" data-whitespace="normal"
+            data-color="['#FFFFFF','#FFFFFF','#FFFFFF','#FFFFFF']" data-type="text" data-responsive_offset="off"
+            data-frames='[{"delay":1400,"speed":800,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+            data-textalign="['left','left','left','center']" data-paddingtop="['0','0','0','0']"
+            data-paddingright="['0','0','0','20']" data-paddingbottom="['0','0','0','0']"
+            data-paddingleft="['0','120','80','20']" data-marginleft="['0','0','0','0']" style="letter-spacing: 0px;">
+            Mation ullamco laboris nisi ut aliquip ex ea core dolor in reprehend er fugiat nulla pariatur.</div>
+        <div class="tp-caption ws_nowrap bebas textLayer" data-x="['left', 'left', 'center', 'center']"
+            data-hoffset="['0', '0', '0', '0']" data-y="['middle']" data-voffset="['163','140','140','70']"
+            data-fontsize="['16']" data-fontweight="500" data-lineheight="['52']"
+            data-width="['auto','auto','auto','100%']" data-height="['auto']" data-whitesapce="['normal']"
+            data-color="['#fff']" data-type="text" data-responsive_offset="off"
+            data-frames='[{"delay":1450,"speed":850,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+            data-textalign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,20]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,120,120,20]"><a
+                class="orbBtn01 hoverBlue" href="about.html">
+                <span class="bp-shape"></span>
+                <span class="bp-shape"></span>
+                <span class="bp-shape"></span>
+                <span class="bp-shape"></span>
+                <span class="bp-text">Read More</span>
+            </a>
+        </div>
+        </li>
+        <li data-index="rs-3048" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0"
+            data-hideslideonmobile="off" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut"
+            data-masterspeed="1000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title=""
+            data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+            data-param8="" data-param9="" data-param10="" data-description="">
+            <img src="assets/picture/1.3.jpg" alt="" data-bgposition="left center" data-bgfit="cover"
+                data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina/=""> <div
+                class="tp-caption tp-resizeme rs-parallaxlevel-1"
+                data-frames='[{"delay":1000,"speed":600,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-x="['left','left','left','left']" data-hoffset="['127','0','0','0']"
+                data-y="['top','top','top','top']" data-voffset="['100','0','0','0']" data-width="auto"
+                data-height="auto" data-basealign="slide"><img src="assets/picture/131.png" alt="Slider Shape"></div>
+            <div class="tp-caption tp-resizeme"
+                data-frames='[{"delay":1200,"speed":300,"frame":"0","from":"y:top;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-x="['right','right','right','right']" data-y="['top','top','top','top']"
+                data-hoffset="['0','0','0','0']" data-voffset="['0','0','0','0']" data-width="auto" data-height="auto"
+                data-basealign="slide"><img src="assets/picture/141.png" alt="Slider Shape"></div>
+            <div class="tp-caption tp-resizeme"
+                data-frames='[{"delay":1200,"speed":600,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-x="['right','right','right','center']" data-y="['bottom','bottom','bottom','center']"
+                data-hoffset="['112','0','0','0']" data-voffset="['0','0','0','0']" data-width="auto" data-height="auto"
+                data-basealign="slide"><img src="assets/picture/15.png" alt="Slider Shape"></div>
+            <div class="tp-caption tp-resizeme"
+                data-frames='[{"delay":1100,"speed":900,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-x="['left','left','left','left']" data-y="['center','center','center','center']"
+                data-hoffset="['152','0','0','0']" data-voffset="['11','0','0','0']" data-width="auto"
+                data-height="auto" data-basealign="slide"><img class="roundAnim02" src="assets/picture/17.png"
+                    alt="Slider Shape"></div>
+            <div class="tp-caption tp-resizeme"
+                data-frames='[{"delay":1200,"speed":900,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"power3.inOut"}]'
+                data-x="['left','left','left','center']" data-y="['center','center','center','center']"
+                data-hoffset="['167','0','0','0']" data-voffset="['-9','0','0','0']" data-width="auto"
+                data-height="auto" data-basealign="slide"><img class="roundAnim01" src="assets/picture/16.png"
+                    alt="Slider Shape"></div>
+            <div class="tp-caption jost textLayer" data-x="['left','left','left','center']"
+                data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['-194','-194','-194','-254']" data-fontsize="['18','18','18','18']"
+                data-fontweight="['500','500','500','500']" data-lineheight="['24','24','24','24']"
+                data-width="['570','570','370','100%']" data-height="none" data-whitespace="nowrap"
+                data-color="['#f9758f','#f9758f','#f9758f','#f9758f']" data-type="text" data-responsive_offset="off"
+                data-frames='[{"delay":1300,"speed":700,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-textalign="['left','left','left','center']" data-paddingtop="['0','0','0','0']"
+                data-paddingright="['0','0','0','20']" data-paddingbottom="['0','0','0','0']"
+                data-paddingleft="['0','120','80','20']" data-marginleft="['0','0','0','0']"
+                style="letter-spacing: 7.5px; text-transform: uppercase;">We Are Orbito</div>
+            <div class="tp-caption jost textLayer" data-x="['left','left','left','center']"
+                data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['-87','-87','-87','-170']" data-fontsize="['72','60','45','45']"
+                data-fontweight="['500','500','500','500']" data-lineheight="['84','72','58','55']"
+                data-width="['570','570','570','100%']" data-height="none" data-whitespace="normal"
+                data-color="['#FFFFFF','#FFFFFF','#FFFFFF','#FFFFFF']" data-type="text" data-responsive_offset="off"
+                data-frames='[{"delay":1350,"speed":750,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-textalign="['left','left','left','center']" data-paddingtop="['0','0','0','0']"
+                data-paddingright="['0','0','0','20']" data-paddingbottom="['0','0','0','0']"
+                data-paddingleft="['0','120','80','20']" data-marginleft="['0','0','0','0']"
+                style="letter-spacing: 0px;">World Leading Creative Agency</div>
+            <div class="tp-caption openSans textLayer" data-x="['left','left','left','center']"
+                data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
+                data-voffset="['61','40','40','-50']" data-fontsize="['24','18','18','18']"
+                data-fontweight="['400','400','400','400']" data-lineheight="['36','32','32','32']"
+                data-width="['570','570','570','100%']" data-height="none" data-whitespace="normal"
+                data-color="['#FFFFFF','#FFFFFF','#FFFFFF','#FFFFFF']" data-type="text" data-responsive_offset="off"
+                data-frames='[{"delay":1400,"speed":800,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-textalign="['left','left','left','center']" data-paddingtop="['0','0','0','0']"
+                data-paddingright="['0','0','0','20']" data-paddingbottom="['0','0','0','0']"
+                data-paddingleft="['0','120','80','20']" data-marginleft="['0','0','0','0']"
+                style="letter-spacing: 0px;">Mation ullamco laboris nisi ut aliquip ex ea core dolor in reprehend er
+                fugiat nulla pariatur.</div>
+            <div class="tp-caption ws_nowrap bebas textLayer" data-x="['left', 'left', 'center', 'center']"
+                data-hoffset="['0', '0', '0', '0']" data-y="['middle']" data-voffset="['163','140','140','70']"
+                data-fontsize="['16']" data-fontweight="500" data-lineheight="['52']"
+                data-width="['auto','auto','auto','100%']" data-height="['auto']" data-whitesapce="['normal']"
+                data-color="['#fff']" data-type="text" data-responsive_offset="off"
+                data-frames='[{"delay":1450,"speed":850,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                data-textalign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,20]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,120,120,20]"><a
+                    class="orbBtn01 hoverBlue" href="about.html">
+                    <span class="bp-shape"></span>
+                    <span class="bp-shape"></span>
+                    <span class="bp-shape"></span>
+                    <span class="bp-shape"></span>
+                    <span class="bp-text">Read More</span>
+                </a>
+            </div>
+        </li>
+        </ul>
+        </div>
+        </div>
+    </section>
+    <!-- END: Slider -->
+
+    <!-- BEGIN: Offer Section -->
+    <section class="offerSection">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3 class="secSubTitle text-uppercase">What We Offer</h3>
+                    <h2 class="secTitle">We Create Your Amazing Digital Experience</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="iconBox01">
+                        <i class="orbito-web"></i>
+                        <h3>Web Development</h3>
+                        <p>
+                            Ture dolor in reprehe ndiit in voluptate velit ese ism dolore eu fugiat nulla pari otore
+                            golatur.
+                        </p>
+                        <div class="seperator clearfix"></div>
+                        <a href="service_details.html" class="readMoreLink">Read More<i
+                                class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="iconBox01">
+                        <i class="orbito-anchor-point"></i>
+                        <h3>Graphic Design</h3>
+                        <p>
+                            Ture dolor in reprehe ndiit in voluptate velit ese ism dolore eu fugiat nulla pari otore
+                            golatur.
+                        </p>
+                        <div class="seperator clearfix"></div>
+                        <a href="service_details.html" class="readMoreLink">Read More<i
+                                class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="iconBox01">
+                        <i class="orbito-video-camera"></i>
+                        <h3>Video Production</h3>
+                        <p>
+                            Ture dolor in reprehe ndiit in voluptate velit ese ism dolore eu fugiat nulla pari otore
+                            golatur.
+                        </p>
+                        <div class="seperator clearfix"></div>
+                        <a href="service_details.html" class="readMoreLink">Read More<i
+                                class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="iconBox01">
+                        <i class="orbito-bar"></i>
+                        <h3>Digital Marketing</h3>
+                        <p>
+                            Ture dolor in reprehe ndiit in voluptate velit ese ism dolore eu fugiat nulla pari otore
+                            golatur.
+                        </p>
+                        <div class="seperator clearfix"></div>
+                        <a href="service_details.html" class="readMoreLink">Read More<i
+                                class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Offer Section -->
+
+    <!-- BEGIN: About Section -->
+    <section class="aboutSection">
+        <div class="container">
+            <div class="row mb117">
+                <div class="col-xl-6">
+                    <div class="aboutImage">
+                        <div class="aiImgRow clearfix">
+                            <img class="float-start aiImg01" src="assets/picture/45.jpg" alt="About Orbito">
+                            <img class="float-end aiImg02" src="assets/picture/55.jpg" alt="About Orbito">
+                        </div>
+                        <div class="aiImgRow clearfix">
+                            <img class="float-start aiImg03" src="assets/picture/64.jpg" alt="About Orbito">
+                            <img class="float-end aiImg04" src="assets/picture/75.jpg" alt="About Orbito">
+                        </div>
+                        <div class="aiCounter">
+                            <h2 class="timer" data-count="12">12</h2>
+                            <h3>Successful Years</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="aboutContent">
+                        <h3 class="secSubTitle text-uppercase">About us</h3>
+                        <h2 class="secTitle">A World Leading Digital Solution Provider</h2>
+                        <div class="abcCounters">
+                            <div class="circleProgressWrap">
+                                <div class="circleProgress" data-skills="0.75" data-emptyfill="#d8dbe6"
+                                    data-fills="#00c0ff">
+                                    <h3></h3>
+                                </div>
+                            </div>
+                            <p>
+                                Mation ullamco laboris nisi ut alior in rep rehend er fugiat nulla pariatur.
+                            </p>
+                        </div>
+                        <div class="abDesc">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum. Sed ut perspicia tis
+                            unde omni od tempor incididunt ut labore.
+                        </div>
+                        <div class="row mb36">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="iconBox02">
+                                    <i class="orbito-event"></i>
+                                    <h4>Business Strategy</h4>
+                                    <p>
+                                        Bempor incididunt ut labore et dolore
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="iconBox02">
+                                    <i class="orbito-briefcase"></i>
+                                    <h4>Marketing Solution</h4>
+                                    <p>
+                                        Bempor incididunt ut labore et dolore
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="orbBtn01" href="about.html">
+                            <span class="bp-shape"></span>
+                            <span class="bp-shape"></span>
+                            <span class="bp-shape"></span>
+                            <span class="bp-shape"></span>
+                            <span class="bp-text">Read More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mbm120">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 noPaddingRight">
+                                <div class="aboutVideo">
+                                    <img src="assets/picture/211.jpg" alt="Orbito Video">
+                                    <div class="avConent">
+                                        <a href="javascript:;" class="videoPoppup"><i class="fas fa-play"></i></a>
+                                        <h3>
+                                            Stunning Solutions for Every Aspects of Your Business
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 noPaddingLeft">
+                                <div class="aboutSkills">
+                                    <h3 class="secSubTitle text-uppercase">We Make Business</h3>
+                                    <h2 class="secTitle">We Work Hard to Grow Your Business</h2>
+                                    <p>
+                                        Mation ullamco laboris nisi ut aliquip ex ea corend eoesir fugiat nulla
+                                        pariatur.
+                                    </p>
+                                    <div class="singleSkill" data-skill="95">
+                                        <h3>Success Rate</h3>
+                                        <span>0%</span>
+                                        <div class="skillWrap">
+                                            <div class="skill"></div>
+                                        </div>
+                                    </div>
+                                    <div class="singleSkill" data-skill="70">
+                                        <h3>Returning Customer</h3>
+                                        <span>0%</span>
+                                        <div class="skillWrap">
+                                            <div class="skill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: About Section -->
+
+    <!-- BEGIN: Portfolio Section -->
+    <section class="portfolioSection">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3 class="secSubTitle text-uppercase">Portfolio</h3>
+                    <h2 class="secTitle">Check Our Amazing Works</h2>
+                    <p class="secDesc">
+                        Mation ullamco laboris nisi ut aliquip exea core dolor in repre hender fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="portfolioSlider owl-carousel">
+                        <div class="folioItem01">
+                            <img src="assets/picture/110.jpg" alt="Orbito Portfolio">
+                            <a href="portfolio_details.html" class="folioLink"><i class="orbito-new-page"></i></a>
+                            <div class="folioContent">
+                                <div class="fcMeta">
+                                    <a href="portfolio2.html">Web Design</a>
+                                </div>
+                                <h3><a href="portfolio_details.html">Website Development for ABC Corporation</a></h3>
+                            </div>
+                        </div>
+                        <div class="folioItem01">
+                            <img src="assets/picture/212.jpg" alt="Orbito Portfolio">
+                            <a href="portfolio_details.html" class="folioLink"><i class="orbito-new-page"></i></a>
+                            <div class="folioContent">
+                                <div class="fcMeta">
+                                    <a href="portfolio2.html">Digital Marketing</a>
+                                </div>
+                                <h3><a href="portfolio_details.html">Digital Marketing for ABC Corporation</a></h3>
+                            </div>
+                        </div>
+                        <div class="folioItem01">
+                            <img src="assets/picture/32.jpg" alt="Orbito Portfolio">
+                            <a href="portfolio_details.html" class="folioLink"><i class="orbito-new-page"></i></a>
+                            <div class="folioContent">
+                                <div class="fcMeta">
+                                    <a href="portfolio2.html">Graphic Design</a>
+                                </div>
+                                <h3><a href="portfolio_details.html">Graphic Design for ABC Corporation</a></h3>
+                            </div>
+                        </div>
+                        <div class="folioItem01">
+                            <img src="assets/picture/101.jpg" alt="Orbito Portfolio">
+                            <a href="portfolio_details.html" class="folioLink"><i class="orbito-new-page"></i></a>
+                            <div class="folioContent">
+                                <div class="fcMeta">
+                                    <a href="portfolio2.html">Development</a>
+                                </div>
+                                <h3><a href="portfolio_details.html">Website Development for ABC Corporation</a></h3>
+                            </div>
+                        </div>
+                        <div class="folioItem01">
+                            <img src="assets/picture/114.jpg" alt="Orbito Portfolio">
+                            <a href="portfolio_details.html" class="folioLink"><i class="orbito-new-page"></i></a>
+                            <div class="folioContent">
+                                <div class="fcMeta">
+                                    <a href="portfolio2.html">Photography</a>
+                                </div>
+                                <h3><a href="portfolio_details.html">Digital Marketing for ABC Corporation</a></h3>
+                            </div>
+                        </div>
+                        <div class="folioItem01">
+                            <img src="assets/picture/122.jpg" alt="Orbito Portfolio">
+                            <a href="portfolio_details.html" class="folioLink"><i class="orbito-new-page"></i></a>
+                            <div class="folioContent">
+                                <div class="fcMeta">
+                                    <a href="portfolio2.html">Business</a>
+                                </div>
+                                <h3><a href="portfolio_details.html">Graphic Design for ABC Corporation</a></h3>
+                            </div>
+                        </div>
+                        <div class="folioItem01">
+                            <img src="assets/picture/212.jpg" alt="Orbito Portfolio">
+                            <a href="portfolio_details.html" class="folioLink"><i class="orbito-new-page"></i></a>
+                            <div class="folioContent">
+                                <div class="fcMeta">
+                                    <a href="portfolio2.html">Digital Marketing</a>
+                                </div>
+                                <h3><a href="portfolio_details.html">Digital Marketing for ABC Corporation</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Portfolio Section -->
+
+    <!-- BEGIN: Why Choose Us Section -->
+    <section class="whyChooseUsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="wcuContent">
+                        <h3 class="secSubTitle text-uppercase">Why Choose Us</h3>
+                        <h2 class="secTitle">We Provide Solutions to Engage Customers</h2>
+                        <p class="secDesc">
+                            Mation ullamco laboris nisi ut aliquip exea core dolor in reprehend erfu giat nulla
+                            pariatur.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="row mb57">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="iconBox03">
+                                <i class="orbito-user2"></i>
+                                <h3>Developer friendly design</h3>
+                                <p>
+                                    Bempor incididunt ut labore et dolor magna aliqus aute irure dolor in rep rehenderit
+                                    in voluptate velit
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="iconBox03">
+                                <i class="orbito-headphones"></i>
+                                <h3>Lifetime Support</h3>
+                                <p>
+                                    Bempor incididunt ut labore et dolor magna aliqus aute irure dolor in rep rehenderit
+                                    in voluptate velit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="iconBox03">
+                                <i class="orbito-shield"></i>
+                                <h3>Secure payments</h3>
+                                <p>
+                                    Bempor incididunt ut labore et dolor magna aliqus aute irure dolor in rep rehenderit
+                                    in voluptate velit
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="iconBox03">
+                                <i class="orbito-tick-1"></i>
+                                <h3>Top user experience</h3>
+                                <p>
+                                    Bempor incididunt ut labore et dolor magna aliqus aute irure dolor in rep rehenderit
+                                    in voluptate velit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Why Choose Us Section -->
+
+    <!-- BEGIN: Good To Know Section -->
+    <section class="goodToKnowSection">
+        <div class="gtkAnim01"></div>
+        <div class="gtkAnim02"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="goodToKnowImg">
+                        <img src="assets/picture/35.jpg" alt="Good To Know">
+                    </div>
+                    <div class="gtkBottom clearfix">
+                        <div class="singleCounter">
+                            <h2><span class="timer" data-count="3">3</span>k</h2>
+                            <h3>Total Projects Worldwide</h3>
+                        </div>
+                        <div class="gtkBottomContent">
+                            <h3>Lets start talking now about next project</h3>
+                            <a class="orbBtn01" href="contact.html">
+                                <span class="bp-shape"></span>
+                                <span class="bp-shape"></span>
+                                <span class="bp-shape"></span>
+                                <span class="bp-shape"></span>
+                                <span class="bp-text">Contact Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 offset-xl-1">
+                    <div class="goodToKnowRight">
+                        <h3 class="secSubTitle text-uppercase">Good to Know</h3>
+                        <h2 class="secTitle">We Are Dedicated to <br>Shape Perfect Solutions</h2>
+                        <div class="orbitoAccordion" id="orbitoAccordion_01">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="orb_acc_hed_2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#orb_acc_col_2" aria-expanded="false"
+                                        aria-controls="orb_acc_col_2">
+                                        Why Orbito is the best choice for your website?
+                                    </button>
+                                </h2>
+                                <div id="orb_acc_col_2" class="accordion-collapse collapse"
+                                    aria-labelledby="orb_acc_hed_2" data-bs-parent="#orbitoAccordion_01">
+                                    <div class="accordion-body">
+                                        Virure dolor in rep rehenderit in voluptate vinim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo cnsequat. Duis aute
+                                        irure dolor in reprehen.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="orb_acc_hed_1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#orb_acc_col_1" aria-expanded="true"
+                                        aria-controls="orb_acc_col_1">
+                                        How can we get the best from Orbito template?
+                                    </button>
+                                </h2>
+                                <div id="orb_acc_col_1" class="accordion-collapse collapse show"
+                                    aria-labelledby="orb_acc_hed_1" data-bs-parent="#orbitoAccordion_01">
+                                    <div class="accordion-body">
+                                        Virure dolor in rep rehenderit in voluptate vinim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo cnsequat. Duis aute
+                                        irure dolor in reprehen.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="orb_acc_hed_3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#orb_acc_col_3" aria-expanded="false"
+                                        aria-controls="orb_acc_col_3">
+                                        Why Orbito is so popular among all other template?
+                                    </button>
+                                </h2>
+                                <div id="orb_acc_col_3" class="accordion-collapse collapse"
+                                    aria-labelledby="orb_acc_hed_3" data-bs-parent="#orbitoAccordion_01">
+                                    <div class="accordion-body">
+                                        Virure dolor in rep rehenderit in voluptate vinim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo cnsequat. Duis aute
+                                        irure dolor in reprehen.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Good To Know Section -->
+
+    <!-- BEGIN: Client Section -->
+    <section class="clientSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="clientLogoSlider owl-carousel">
+                        <a class="clientLogo" href="javascript:void(0);">
+                            <img src="assets/picture/1h.png" alt="Orbito Client">
+                            <img src="assets/picture/110.png" alt="Orbito Client">
+                        </a>
+                        <a class="clientLogo" href="javascript:void(0);">
+                            <img src="assets/picture/2h.png" alt="Orbito Client">
+                            <img src="assets/picture/22.png" alt="Orbito Client">
+                        </a>
+                        <a class="clientLogo" href="javascript:void(0);">
+                            <img src="assets/picture/3h.png" alt="Orbito Client">
+                            <img src="assets/picture/31.png" alt="Orbito Client">
+                        </a>
+                        <a class="clientLogo" href="javascript:void(0);">
+                            <img src="assets/picture/4h.png" alt="Orbito Client">
+                            <img src="assets/picture/41.png" alt="Orbito Client">
+                        </a>
+                        <a class="clientLogo" href="javascript:void(0);">
+                            <img src="assets/picture/5h.png" alt="Orbito Client">
+                            <img src="assets/picture/5.png" alt="Orbito Client">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Client Section -->
+
+    <!-- BEGIN: Team Section -->
+    <section class="teamSection">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3 class="secSubTitle text-uppercase">Team Members</h3>
+                    <h2 class="secTitle">Amazing Team Members</h2>
+                    <p class="secDesc">
+                        Mation ullamco laboris nisi ut aliquip exea core dolor in repre hender fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="teamMember01">
+                        <img src="assets/picture/115.jpg" alt="Orbto Team">
+                        <div class="tm01Info">
+                            <h3>Mike Anderson</h3>
+                            <span>Founder & CEO</span>
+                        </div>
+                        <div class="tm01Social">
+                            <a href="javascript:void(0);"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="javascript:void(0);"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="javascript:void(0);"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 evenTeam">
+                    <div class="teamMember01">
+                        <img src="assets/picture/210.jpg" alt="Orbto Team">
+                        <div class="tm01Info">
+                            <h3>Michel Jason</h3>
+                            <span>Sr. Developer</span>
+                        </div>
+                        <div class="tm01Social">
+                            <a href="javascript:void(0);"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="javascript:void(0);"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="javascript:void(0);"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="teamMember01">
+                        <img src="assets/picture/34.jpg" alt="Orbto Team">
+                        <div class="tm01Info">
+                            <h3>Ellyse Perry</h3>
+                            <span>Digital Marketer</span>
+                        </div>
+                        <div class="tm01Social">
+                            <a href="javascript:void(0);"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="javascript:void(0);"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="javascript:void(0);"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 evenTeam">
+                    <div class="teamMember01">
+                        <img src="assets/picture/43.jpg" alt="Orbto Team">
+                        <div class="tm01Info">
+                            <h3>Shane Watson</h3>
+                            <span>Graphic Designer</span>
+                        </div>
+                        <div class="tm01Social">
+                            <a href="javascript:void(0);"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="javascript:void(0);"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="javascript:void(0);"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Team Section -->
+
+    <!-- BEGIN: Testimonial Section -->
+    <section class="testimonialSection overflowHidde">
+        <div class="container">
+            <div class="row mb120">
+                <div class="col-lg-4 col-md-5 zIndex4">
+                    <div class="testimoniLeft">
+                        <h3 class="secSubTitle text-uppercase">Testimonial</h3>
+                        <h2 class="secTitle">What People Say About Us</h2>
+                        <p class="secDesc">
+                            Mation ullamco laboris nisi ut aliquip exea core dolor in repre hender fugiat nulla jobone
+                            pariatur.
+                        </p>
+                        <div class="testimonialNav">
+                            <button type="button" class="tnPrev"><i class="fa-solid fa-angle-left"></i></button>
+                            <button type="button" class="tnNext"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="testimonialSlider owl-carousel">
+                        <div class="testimonialItem">
+                            <p>
+                                Duis aute irure dolor in reprehe nd erit in voluptate velit esse cill uszm dolore eu
+                                fugiat nulla pari atur. Exc epteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia mollit
+                            </p>
+                            <div class="testimonialAuthor">
+                                <img src="assets/picture/1.png" alt="Orbito Testimonial">
+                                <h4>Mike Anderson</h4>
+                                <span>Web Developer</span>
+                            </div>
+                        </div>
+                        <div class="testimonialItem">
+                            <p>
+                                Duis aute irure dolor in reprehe nd erit in voluptate velit esse cill uszm dolore eu
+                                fugiat nulla pari atur. Exc epteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia mollit
+                            </p>
+                            <div class="testimonialAuthor">
+                                <img src="assets/picture/2.png" alt="Orbito Testimonial">
+                                <h4>Paul Harrison</h4>
+                                <span>Web Developer</span>
+                            </div>
+                        </div>
+                        <div class="testimonialItem">
+                            <p>
+                                Duis aute irure dolor in reprehe nd erit in voluptate velit esse cill uszm dolore eu
+                                fugiat nulla pari atur. Exc epteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia mollit
+                            </p>
+                            <div class="testimonialAuthor">
+                                <img src="assets/picture/3.png" alt="Orbito Testimonial">
+                                <h4>Sarah Jessica</h4>
+                                <span>Singer</span>
+                            </div>
+                        </div>
+                        <div class="testimonialItem">
+                            <p>
+                                Duis aute irure dolor in reprehe nd erit in voluptate velit esse cill uszm dolore eu
+                                fugiat nulla pari atur. Exc epteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia mollit
+                            </p>
+                            <div class="testimonialAuthor">
+                                <img src="assets/picture/4.png" alt="Orbito Testimonial">
+                                <h4>John Anderson</h4>
+                                <span>Marketer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="counterArea">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="singleCounter02">
+                                    <h2><span class="timer" data-count="120">120</span><sup
+                                            class="timerSuffixSmall">+</sup></h2>
+                                    <h3>Total <br>Countries</h3>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="singleCounter02">
+                                    <h2><span class="timer" data-count="2">2</span><span class="timerSuffix">K</span>
+                                    </h2>
+                                    <h3>Worldwide <br>Customers</h3>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="singleCounter02">
+                                    <h2><span class="timer" data-count="10">10</span><span class="timerSuffix">K</span>
+                                    </h2>
+                                    <h3>Completed <br>Projects</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Testimonial Section -->
+
+    <!-- BEGIN: Blog Section -->
+    <section class="blogSection">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3 class="secSubTitle text-uppercase">From Our Blog</h3>
+                    <h2 class="secTitle">Latest News & Updates</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="blogItem01">
+                        <div class="bi01Thumb">
+                            <img src="assets/picture/116.jpg" alt="">
+                            <div class="bi01Date">
+                                <span>29</span>
+                                <span>Apr</span>
+                            </div>
+                        </div>
+                        <div class="bi01Details">
+                            <div class="bi01Meta">
+                                <span><a href="blog_grid_rsb.html"><i
+                                            class="fa-solid fa-folder-open"></i>&nbsp;&nbsp;Web Design</a></span>
+                                <span><a href="blog_grid_rsb.html"><i
+                                            class="fa-solid fa-user"></i>&nbsp;&nbsp;Admin</a></span>
+                                <span><a href="blog_single.html"><i
+                                            class="fa-solid fa-comments"></i>&nbsp;&nbsp;22</a></span>
+                            </div>
+                            <h3><a href="blog_single.html">When the musics over turn off the light said by Jim</a></h3>
+                            <a href="blog_single.html" class="readMoreLink">Read More<i
+                                    class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="blogItem01">
+                        <div class="bi01Thumb">
+                            <img src="assets/picture/213.jpg" alt="">
+                            <div class="bi01Date">
+                                <span>15</span>
+                                <span>May</span>
+                            </div>
+                        </div>
+                        <div class="bi01Details">
+                            <div class="bi01Meta">
+                                <span><a href="blog_grid_rsb.html"><i
+                                            class="fa-solid fa-folder-open"></i>&nbsp;&nbsp;Web Design</a></span>
+                                <span><a href="blog_grid_rsb.html"><i
+                                            class="fa-solid fa-user"></i>&nbsp;&nbsp;Admin</a></span>
+                                <span><a href="blog_single.html"><i
+                                            class="fa-solid fa-comments"></i>&nbsp;&nbsp;22</a></span>
+                            </div>
+                            <h3><a href="blog_single.html">When the musics over turn off the light said by Jim</a></h3>
+                            <a href="blog_single.html" class="readMoreLink">Read More<i
+                                    class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="blogItem01">
+                        <div class="bi01Thumb">
+                            <img src="assets/picture/36.jpg" alt="">
+                            <div class="bi01Date">
+                                <span>19</span>
+                                <span>May</span>
+                            </div>
+                        </div>
+                        <div class="bi01Details">
+                            <div class="bi01Meta">
+                                <span><a href="blog_grid_rsb.html"><i
+                                            class="fa-solid fa-folder-open"></i>&nbsp;&nbsp;Web Design</a></span>
+                                <span><a href="blog_grid_rsb.html"><i
+                                            class="fa-solid fa-user"></i>&nbsp;&nbsp;Admin</a></span>
+                                <span><a href="blog_single.html"><i
+                                            class="fa-solid fa-comments"></i>&nbsp;&nbsp;22</a></span>
+                            </div>
+                            <h3><a href="blog_single.html">When the musics over turn off the light said by Jim</a></h3>
+                            <a href="blog_single.html" class="readMoreLink">Read More<i
+                                    class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Blog Section -->
+
+    <!-- BEGIN: CTA Section -->
+    <section class="ctaSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9">
+                    <div class="ctaLeft">
+                        <h3 class="secSubTitle text-uppercase">We Love What We do</h3>
+                        <h2 class="secTitle stWhite">Let’s Create Something Together</h2>
+                        <p class="secDesc">Pure dolor in reprehenderit in voluptate velit essm dolore eu fugiat </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="ctaRight justify-content-end">
+                        <a class="orbBtn01 hoverBlue" href="contact.html">
+                            <span class="bp-shape"></span>
+                            <span class="bp-shape"></span>
+                            <span class="bp-shape"></span>
+                            <span class="bp-shape"></span>
+                            <span class="bp-text">Contact Us</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ctaBorder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: CTA Section -->
+
+    <!-- BEGIN: Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <aside class="widget about_widget">
+                        <div class="aboutWidgetContent">
+                            <a href=""><img src="assets/picture/logo_white.png" alt="Orbito"></a>
+                            <p>
+                                Duis aute irure dolor in reprehender it in voluptate velit esse cillum
+                            </p>
+                            <div class="contactInfo">
+                                <span><i class="fa-solid fa-location-dot"></i>20 Bordeshi, New York, USA</span>
+                                <span><i class="fa-solid fa-phone"></i>+123 456 789000</span>
+                                <span><i class="fa-solid fa-envelope"></i><a
+                                        href="mailto:hello@orbito.com">hello@orbito.com</a></span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <aside class="widget">
+                        <h3 class="widgetTitle">Services</h3>
+                        <ul>
+                            <li><a href="service_details.html">Website Design</a></li>
+                            <li><a href="service_details.html">Web Development</a></li>
+                            <li><a href="service_details.html">SE Ontimization</a></li>
+                            <li><a href="service_details.html">Digital Marketing</a></li>
+                            <li><a href="service_details.html">Online Security</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-3 col-md-6 pdl124">
+                    <aside class="widget">
+                        <h3 class="widgetTitle">Useful Links</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html">Company Profile</a></li>
+                            <li><a href="team_members.html">Team Members</a></li>
+                            <li><a href="faq.html">Support</a></li>
+                            <li><a href="javascript:void(0);">Career</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <aside class="widget">
+                        <h3 class="widgetTitle">Newsletter</h3>
+                        <div class="newsletterContent">
+                            <p>Duis aute irure dolor in reprehender it in voluptate velit esse cillum</p>
+                            <form method="post" action="#">
+                                <input type="email" name="email" placeholder="Your email here">
+                                <button type="submit"><i class="fa-solid fa-envelope"></i></button>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footerBorder"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: Footer Section -->
+
+    <!-- BEGIN: Copyright Section -->
+    <section class="siteInfoSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="siteInfo">
+                        All rights By <a href="javascript:;">bootstrapmb</a>&nbsp;&nbsp;<a
+                            href="">Orbito</a>&nbsp;&nbsp;&COPY;&nbsp;&nbsp;2022
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="footerMenu">
+                        <ul>
+                            <li><a href="javascript:void();">Terms & Condition</a></li>
+                            <li><a href="javascript:void();">Privacy Policy</a></li>
+                            <li><a href="javascript:void();">Legal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Copyright Section -->
+
+    <!-- BEGIN: Back To Top -->
+    <a href="javascript:void(0);" id="backtotop"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- END: Back To Top -->
+
+    <!-- BEGIN: JS -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/shuffle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/owl.carousel.filter.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/lightslider.min.js"></script>
+    <script src="assets/js/circle-progress.js"></script>
+    <script src="assets/js/mixer.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/gmaps.js"></script>
+    <script src="assets/js/js.html"></script>
+
+    <script src="assets/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="assets/js/revolution.extension.actions.min.js"></script>
+    <script src="assets/js/revolution.extension.carousel.min.js"></script>
+    <script src="assets/js/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/js/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/js/revolution.extension.migration.min.js"></script>
+    <script src="assets/js/revolution.extension.migration.min.js"></script>
+    <script src="assets/js/revolution.extension.parallax.min.js"></script>
+    <script src="assets/js/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/js/revolution.extension.video.min.js"></script>
+
+    <script src="assets/js/theme.js"></script><!-- END:JS -->
+</body>
+
+</html>
